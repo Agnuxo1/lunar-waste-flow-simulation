@@ -1,0 +1,401 @@
+{
+  "title": "Lunar waste flow",
+  "subtitle": "An auditable conceptual mass-balance model",
+  "figures": [
+    {
+      "kind": "flow",
+      "id": "flow",
+      "title": "Partition collected mass into documented streams",
+      "subtitle": "All modeled destinations are accounted for, including residue",
+      "nodes": [
+        [
+          0.12,
+          0.35,
+          "Collected material"
+        ],
+        [
+          0.4,
+          0.15,
+          "Organic feed",
+          "below"
+        ],
+        [
+          0.4,
+          0.72,
+          "Other material"
+        ],
+        [
+          0.7,
+          0.11,
+          "Product streams",
+          "below"
+        ],
+        [
+          0.7,
+          0.48,
+          "Residual stream"
+        ],
+        [
+          0.7,
+          0.85,
+          "Recovered material",
+          "above"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "basis": "Technical schematic",
+      "source": "Source: code paths described in the README",
+      "alt": "Partition collected mass into documented streams. Collected material; Organic feed; Other material; Product streams; Residual stream; Recovered material"
+    },
+    {
+      "kind": "xy",
+      "id": "mass",
+      "title": "Illustrative mass balances over fourteen days",
+      "subtitle": "Four crew members; no efficiencies have been measured",
+      "xlim": [
+        0,
+        14
+      ],
+      "ylim": [
+        0,
+        1600
+      ],
+      "xlabel": "Simulation day",
+      "ylabel": "Mass (kg)",
+      "series": [
+        {
+          "label": "Remaining stock",
+          "points": [
+            [
+              0,
+              1500
+            ],
+            [
+              1,
+              1359
+            ],
+            [
+              2,
+              1232.1
+            ],
+            [
+              3,
+              1117.89
+            ],
+            [
+              4,
+              1015.1010000000001
+            ],
+            [
+              5,
+              922.5909000000001
+            ],
+            [
+              6,
+              839.3318100000001
+            ],
+            [
+              7,
+              764.398629
+            ],
+            [
+              8,
+              696.9587661
+            ],
+            [
+              9,
+              636.2628894899999
+            ],
+            [
+              10,
+              581.636600541
+            ],
+            [
+              11,
+              532.4729404868999
+            ],
+            [
+              12,
+              488.22564643821
+            ],
+            [
+              13,
+              448.403081794389
+            ],
+            [
+              14,
+              412.5627736149501
+            ]
+          ]
+        },
+        {
+          "label": "Recovered cumulative",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              110.76
+            ],
+            [
+              2,
+              211.204
+            ],
+            [
+              3,
+              302.3636
+            ],
+            [
+              4,
+              385.16724
+            ],
+            [
+              5,
+              460.450516
+            ],
+            [
+              6,
+              528.9654644
+            ],
+            [
+              7,
+              591.38891796
+            ],
+            [
+              8,
+              648.330026164
+            ],
+            [
+              9,
+              700.3370235476
+            ],
+            [
+              10,
+              747.9033211928399
+            ],
+            [
+              11,
+              791.4729890735559
+            ],
+            [
+              12,
+              831.4456901662004
+            ],
+            [
+              13,
+              868.1811211495803
+            ],
+            [
+              14,
+              902.0030090346223
+            ]
+          ]
+        },
+        {
+          "label": "Residue cumulative",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              40.24000000000001
+            ],
+            [
+              2,
+              76.69600000000001
+            ],
+            [
+              3,
+              109.74640000000002
+            ],
+            [
+              4,
+              139.73176000000004
+            ],
+            [
+              5,
+              166.95858400000003
+            ],
+            [
+              6,
+              191.70272560000004
+            ],
+            [
+              7,
+              214.21245304000004
+            ],
+            [
+              8,
+              234.71120773600006
+            ],
+            [
+              9,
+              253.40008696240005
+            ],
+            [
+              10,
+              270.46007826616005
+            ],
+            [
+              11,
+              286.05407043954403
+            ],
+            [
+              12,
+              300.3286633955896
+            ],
+            [
+              13,
+              313.41579705603067
+            ],
+            [
+              14,
+              325.4342173504276
+            ]
+          ]
+        }
+      ],
+      "source": "Source: executable model, illustrative default scenario",
+      "basis": "Illustrative simulation",
+      "alt": "Illustrative mass balances over fourteen days. Four crew members; no efficiencies have been measured",
+      "xticks": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "yticks": [
+        0,
+        400,
+        800,
+        1200,
+        1600
+      ]
+    },
+    {
+      "kind": "flow",
+      "id": "verify",
+      "title": "Check conservation at each time step",
+      "subtitle": "The simulator checks mass, not lunar process feasibility",
+      "nodes": [
+        [
+          0.1,
+          0.51,
+          "Feed and stock"
+        ],
+        [
+          0.3666666666666667,
+          0.51,
+          "Apply assumptions"
+        ],
+        [
+          0.6333333333333333,
+          0.51,
+          "Balance output"
+        ],
+        [
+          0.9000000000000001,
+          0.51,
+          "Export trace"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "basis": "Technical schematic",
+      "source": "Source: code paths described in the README",
+      "alt": "Check conservation at each time step. Feed and stock; Apply assumptions; Balance output; Export trace"
+    },
+    {
+      "kind": "flow",
+      "id": "rights",
+      "title": "Publish the reproducible research core",
+      "subtitle": "The historical competition package is separately held",
+      "nodes": [
+        [
+          0.1,
+          0.51,
+          "Source code"
+        ],
+        [
+          0.3666666666666667,
+          0.51,
+          "Illustrative inputs"
+        ],
+        [
+          0.6333333333333333,
+          0.51,
+          "No private files"
+        ],
+        [
+          0.9000000000000001,
+          0.51,
+          "Project citation"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "basis": "Technical schematic",
+      "source": "Source: code paths described in the README",
+      "alt": "Publish the reproducible research core. Source code; Illustrative inputs; No private files; Project citation"
+    }
+  ]
+}
