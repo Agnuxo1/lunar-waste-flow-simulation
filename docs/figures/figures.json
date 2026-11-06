@@ -397,5 +397,16 @@
       "source": "Source: code paths described in the README",
       "alt": "Publish the reproducible research core. Source code; Illustrative inputs; No private files; Project citation"
     }
-  ]
+  ],
+  "provenance": {
+    "creator": {
+      "name": "Francisco Angulo de Lafuente",
+      "orcid": "https://orcid.org/0009-0001-1634-7063"
+    },
+    "copyright_year": 2026,
+    "recorded_on": "2026-11-06",
+    "canonical_url": "https://github.com/Agnuxo1/lunar-waste-flow-simulation",
+    "data_scope": "Illustrative values derived from the repository's own model; not measured data.",
+    "license_scope": "Outside the current documented MIT file list; the initial repository-level MIT scope for figures remains unresolved. See ../../LICENSE_SCOPE.md."
+  }
 }

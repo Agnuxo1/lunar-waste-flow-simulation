@@ -1,0 +1,44 @@
+{
+  "project": "lunar-waste-flow-simulation",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "copyright_year": 2026,
+  "recorded_on": "2026-11-06",
+  "canonical_url": "https://github.com/Agnuxo1/lunar-waste-flow-simulation",
+  "baseline_commit": "598769da62592d50dcf809af7c06cdf4083d768f",
+  "license_scope": {
+    "spdx_license": "MIT",
+    "licensed_original_files": [
+      ".gitignore",
+      "src/waste_flow.py",
+      "tools/render_lab_figures.py"
+    ],
+    "unresolved_historical_asset": {
+      "path": "docs/figures/cover.jpg and generated cover outputs",
+      "status": "source and license not recorded; omitted from current branch, retained in original public commit history",
+      "commit": "598769da62592d50dcf809af7c06cdf4083d768f"
+    },
+    "details": "See LICENSE_SCOPE.md. The root MIT text is unmodified.",
+    "historical_unscoped_mit_status": "Initial public commit and metadata declared MIT without a file-level scope. Current scope note records intended scope but does not revoke prior rights; interpretation for non-code files remains unresolved.",
+    "outside_current_documented_scope": [
+      "documentation and citation metadata",
+      "docs/figures/figures.json",
+      "generated PNG and GIF figure outputs",
+      "third-party and prior team-submission material"
+    ]
+  },
+  "challenge_rules_consulted": [
+    {
+      "title": "NASA LunaRecycle Challenge Phase 1 Rules",
+      "revision_date": "2024-09-30",
+      "url": "https://lunarecyclechallenge.ua.edu/wp-content/uploads/2024/09/NASAs-LunaRecycle-Phase-1-Rules-1.pdf",
+      "scope": "Section Intellectual Property Rights; the challenge name/trademark restrictions were also reviewed."
+    },
+    {
+      "title": "NASA LunaRecycle Challenge Phase 2 Official Challenge Rules, Revision 5",
+      "revision_date": "2026-08-24",
+      "url": "https://lunarecyclechallenge.ua.edu/wp-content/uploads/2026/08/NASAs-LunaRecycle-Challenge-Phase-2-Official-Challenge-Rules-Rev5.pdf",
+      "scope": "Sections No Recommendations or Limitations for Software and Intellectual Property Rights."
+    }
+  ]
+}

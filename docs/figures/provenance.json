@@ -6,6 +6,13 @@
     "orcid": "https://orcid.org/0009-0001-1634-7063"
   },
   "figureRendererLicense": "MIT",
-  "projectLicense": "MIT",
-  "licenseFile": "LICENSE"
+  "projectLicense": "See LICENSE_SCOPE.md; current file scope is documented there and historical scope remains unresolved.",
+  "licenseFile": "LICENSE",
+  "recorded_on": "2026-11-06",
+  "canonical_url": "https://github.com/Agnuxo1/lunar-waste-flow-simulation",
+  "copyrightYear": 2026,
+  "figureOutputsLicense": "No separate file-level license is assigned; the initial repository-level MIT scope is unresolved.",
+  "coverAssetStatus": "Source and license not recorded; omitted from current branch; present in original commit history.",
+  "licenseScope": "../../LICENSE_SCOPE.md",
+  "creatorScope": "Technical figures and specification only; does not include the former cover asset with unresolved source and license."
 }

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "project": "lunar-waste-flow-simulation",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "canonical_url": "https://github.com/Agnuxo1/lunar-waste-flow-simulation",
+  "recorded_on": "2026-11-06",
+  "baseline_commit": "598769da62592d50dcf809af7c06cdf4083d768f",
+  "baseline_branch": "main",
+  "baseline_commit_date_utc": "2026-11-04T09:51:54Z",
+  "method": {
+    "file_hash": "SHA-256 over exact Git blob bytes from baseline commit",
+    "passage_fingerprint": "SHA-256 over UTF-8 text after collapsing all whitespace to one ASCII space",
+    "selection": "Distinctive original prose, equations, and authored figure specification; excludes boilerplate, generated images, and material with unresolved third-party provenance.",
+    "limitations": "Hashes and phrase matches support comparison only; they do not establish authorship, access, or infringement."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "55220d3ec9a0017bcb67d2174b0364bdb67ae256c8a24833875c4999088c576b",
+      "size_bytes": 3209
+    },
+    {
+      "path": "src/waste_flow.py",
+      "sha256": "f97f6e38f98ade6736262a03e9700f3ddd7cf742c491e0159539af8a7eb6d36c",
+      "size_bytes": 2148
+    },
+    {
+      "path": "tools/render_lab_figures.py",
+      "sha256": "bfd364c6586ca6341e7a52793a37ca7924000263a96542f1a96b562b45c012ff",
+      "size_bytes": 10242
+    },
+    {
+      "path": "docs/figures/figures.json",
+      "sha256": "9e1fa59b9d280413c4fbf0f79c247d60011140927b76bdcf97d2a15ec8f8699a",
+      "size_bytes": 7891
+    }
+  ],
+  "passage_fingerprints": [
+    {
+      "path": "README.md",
+      "label": "Software and proposal-material limitation statement",
+      "excerpt": "This is a small software model, not a NASA-approved design, hardware test, or evidence of an accepted submission. Earlier proposal material and personal data remain outside this repository.",
+      "normalized_sha256": "d88473c8f27a5cd4df676b66fa23b86b7e34f44b002c05a8be909638d5cf3f76"
+    },
+    {
+      "path": "src/waste_flow.py",
+      "label": "Daily mass-balance equation and invariant",
+      "excerpt": "expected=initial_organic_kg+initial_other_kg+day*2.5*crew",
+      "normalized_sha256": "663a49021e8536c1c7a5166eca7be79c6a7788df7e5ebd572fed34895b2a7d5d"
+    },
+    {
+      "path": "src/waste_flow.py",
+      "label": "Distinct recovered-stream coefficients",
+      "excerpt": "gas+=.3*feed alcohol+=.2*feed biodiesel+=.1*feed residue+=.4*feed",
+      "normalized_sha256": "7bb9a350716fe938c7625f3d3ea64a0b7968c36089d38e66336db19e6282f263"
+    },
+    {
+      "path": "tools/render_lab_figures.py",
+      "label": "Figure animation schedule and metadata comment",
+      "excerpt": "delay=[110]*len(frames) if is_banner else [1050]+[410]*(len(frames)-2)+[1800]",
+      "normalized_sha256": "6e7596bcff95212a0406b57925975cd9f197b3d077e77b69a56a7f3bc4459bdd"
+    },
+    {
+      "path": "docs/figures/figures.json",
+      "label": "Distinctive mass-balance figure subtitle",
+      "excerpt": "\"All modeled destinations are accounted for, including residue\"",
+      "normalized_sha256": "956cdf38d4dea5115aaa98a9b20d19ccfa7297e56adb6cf97a7b2e7c026b384e"
+    }
+  ],
+  "excluded_paths": [
+    {
+      "path": "docs/figures/cover.jpg",
+      "reason": "Original source/license not recorded; excluded pending verification."
+    },
+    {
+      "path": "docs/figures/cover.gif and docs/figures/cover.png",
+      "reason": "Generated cover outputs inherit the unresolved source image; excluded."
+    },
+    {
+      "path": "docs/figures/flow.gif, mass.gif, verify.gif, rights.gif and corresponding PNG files",
+      "reason": "Generated figure outputs are excluded as generated artifacts; source specification and renderer are fingerprinted separately."
+    }
+  ],
+  "copyright_year": 2026
+}
